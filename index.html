@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>б-е-е-е-е</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<audio id="player" src="audio/bleep.mp3" type="audio/mpeg" ></audio>
+    <div style="text-align:center" class="container">
+        <button onclick="document.getElementById('player').play()" type="button"  class="btn1">Б-Е-Е-Е-Е</button>
+        <script type="text/javascript">
+            var color = ["#FED6BC","#FFFADD","#DEF7FE","#E7ECFF","#C3FBD8","#FDEED9","#F6FFF8","#B5F2EA","#C6D8FF"];
+            var i = 0;
+            document.querySelector("button").addEventListener("click", function () {
+            i = i < color.length ? ++i : 0;
+            document.querySelector("body").style.background =  color[i]})
+        </script>
+    </div>
+</body>
+</html>
